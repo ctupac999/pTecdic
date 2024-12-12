@@ -1,0 +1,44 @@
+.filters {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem; 
+    margin: 1rem 0;
+    padding: 0.5rem;
+    background-color: var(--background-color); 
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+#categoryFilter {
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    border: 1px solid var(--input-border-color); 
+    border-radius: 5px; 
+    background-color: var(--input-background-color);
+    color: var(--input-text-color); 
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+#categoryFilter:focus {
+    border-color: var(--primary-accent-color);
+    box-shadow: 0 0 5px var(--primary-accent-color); 
+    outline: none; 
+}
+
+#searchInput {
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    border: 1px solid var(--input-border-color);
+    border-radius: 5px; 
+    background-color: var(--input-background-color); 
+    color: var(--input-text-color); 
+    width: 250px; 
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+#searchInput:focus {
+    border-color: var(--primary-accent-color); 
+    box-shadow: 0 0 5px var(--primary-accent-color);
+    outline: none;
+}

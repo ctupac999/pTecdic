@@ -1,0 +1,23 @@
+// data/products.js
+export const products = [
+    { id: 1, name: 'Laptop Pro 15"', price: 1200, category: 'category1', description: 'Laptop con procesador Intel i7, 16GB RAM y SSD de 512GB.', image: 'https://via.placeholder.com/150' },
+    { id: 2, name: 'Mouse Inalámbrico', price: 25, category: 'category2', description: 'Mouse ergonómico con conectividad Bluetooth.', image: 'https://via.placeholder.com/150' },
+    { id: 3, name: 'Teclado Mecánico RGB', price: 80, category: 'category1', description: 'Teclado con iluminación RGB personalizable y switches mecánicos.', image: 'https://via.placeholder.com/150' },
+    { id: 4, name: 'Monitor 27" 4K', price: 350, category: 'category2', description: 'Monitor de alta resolución con panel IPS y tecnología HDR.', image: 'https://via.placeholder.com/150' },
+    { id: 5, name: 'Disco Duro Externo 1TB', price: 60, category: 'category1', description: 'Disco duro portátil con conexión USB 3.0.', image: 'https://via.placeholder.com/150' },
+    { id: 6, name: 'Impresora Multifunción', price: 150, category: 'category2', description: 'Impresora con función de escáner, copiadora y Wi-Fi.', image: 'https://via.placeholder.com/150' },
+    { id: 7, name: 'Auriculares con Micrófono', price: 40, category: 'category1', description: 'Auriculares con sonido envolvente y micrófono integrado.', image: 'https://via.placeholder.com/150' },
+    { id: 8, name: 'Cámara Web Full HD', price: 70, category: 'category2', description: 'Cámara web con resolución 1080p y micrófono estéreo.', image: 'https://via.placeholder.com/150' },
+    { id: 9, name: 'Memoria RAM 16GB DDR4', price: 90, category: 'category1', description: 'Módulo de memoria RAM para mejorar el rendimiento del sistema.', image: 'https://via.placeholder.com/150' },
+    { id: 10, name: 'Fuente de Poder 650W', price: 80, category: 'category2', description: 'Fuente de poder certificada 80 Plus Gold.', image: 'https://via.placeholder.com/150' },
+    { id: 11, name: 'Tarjeta Gráfica RTX 3060', price: 450, category: 'category1', description: 'Tarjeta gráfica para gaming con 12GB de memoria GDDR6.', image: 'https://via.placeholder.com/150' },
+    { id: 12, name: 'SSD 1TB NVMe', price: 120, category: 'category2', description: 'Unidad de almacenamiento ultrarrápida para sistemas modernos.', image: 'https://via.placeholder.com/150' },
+    { id: 13, name: 'Switch Ethernet 8 Puertos', price: 35, category: 'category1', description: 'Switch Gigabit para redes de alta velocidad.', image: 'https://via.placeholder.com/150' },
+    { id: 14, name: 'Router Wi-Fi 6', price: 100, category: 'category2', description: 'Router de última generación con velocidad ultrarrápida.', image: 'https://via.placeholder.com/150' },
+    { id: 15, name: 'Silla Gamer', price: 250, category: 'category1', description: 'Silla ergonómica diseñada para largas sesiones de juego.', image: 'https://via.placeholder.com/150' },
+    { id: 16, name: 'Estación de Carga USB', price: 40, category: 'category2', description: 'Estación de carga con múltiples puertos USB.', image: 'https://via.placeholder.com/150' },
+    { id: 17, name: 'Cooler para CPU', price: 50, category: 'category1', description: 'Sistema de enfriamiento eficiente para procesadores.', image: 'https://via.placeholder.com/150' },
+    { id: 18, name: 'Cable HDMI 4K 2m', price: 15, category: 'category2', description: 'Cable de alta calidad para transmisión de video 4K.', image: 'https://via.placeholder.com/150' },
+    { id: 19, name: 'Hub USB-C', price: 30, category: 'category1', description: 'Adaptador con múltiples puertos USB, HDMI y lector de tarjetas.', image: 'https://via.placeholder.com/150' },
+    { id: 20, name: 'Soporte para Monitor', price: 25, category: 'category2', description: 'Soporte ajustable para monitores de hasta 27 pulgadas.', image: 'https://via.placeholder.com/150' },
+];

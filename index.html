@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Listado de Productos</title>
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="icon" href="https://www.google.com/favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <h1>Listado de Productos</h1>
+    </header>
+    <main>
+        <div class="filters">
+            <select id="categoryFilter">
+                <option value="all">Todas las Categorías</option>
+                <option value="category1">Categoría 1</option>
+                <option value="category2">Categoría 2</option>
+            </select>
+            <input type="text" id="searchInput" placeholder="Buscar productos...">
+        </div>
+        <div id="productList" class="product-list"></div>
+        <div id="productModal" class="modal hidden"></div>
+    </main>
+    <script type="module" src="assets/js/main.js"></script></body>
+</html>
