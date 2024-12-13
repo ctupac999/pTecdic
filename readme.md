@@ -1,6 +1,6 @@
 # Proyecto: Listado de Productos Interactivo para E-Commerce
 
-Este proyecto es una aplicación web interactiva diseñada para mostrar un listado de productos con funcionalidades de filtrado, búsqueda en tiempo real y una ficha de producto detallada. El objetivo es cumplir con las especificaciones indicadas, destacando la experiencia de usuario y la organización del código.
+Este proyecto es una aplicación web interactiva diseñada para mostrar un listado de productos con funcionalidades de filtrado, búsqueda en tiempo real, carrito de compras y ficha de producto detallada. El objetivo es cumplir con las especificaciones indicadas, destacando la experiencia de usuario, la organización del código y la posibilidad de realizar compras.
 
 ---
 
@@ -23,7 +23,13 @@ Este proyecto es una aplicación web interactiva diseñada para mostrar un lista
 - Campo de texto (`<input type="text">`) para buscar productos por nombre.
 - El listado se actualiza dinámicamente mientras el usuario escribe.
 
-### **4. Ficha de Producto**
+### **4. Carrito de Compras**
+- Los usuarios pueden añadir productos al carrito, con la funcionalidad de aumentar o reducir la cantidad de cada artículo.
+- Al añadir productos, el carrito se actualiza dinámicamente, mostrando la lista de productos, sus cantidades y el precio total.
+- El carrito permite eliminar productos y ver el total actualizado.
+- Los usuarios pueden realizar la compra, y si el carrito está vacío, se muestra un mensaje de alerta.
+
+### **5. Ficha de Producto**
 - Al hacer clic en un producto, se muestra una ficha con los siguientes detalles:
   - Imagen ampliada.
   - Nombre.
@@ -32,9 +38,13 @@ Este proyecto es una aplicación web interactiva diseñada para mostrar un lista
   - Botón de "Añadir al carrito".
 - La ficha se presenta en un modal que se puede cerrar fácilmente.
 
-### **5. Animación en el Botón de "Añadir al Carrito"**
+### **6. Animación en el Botón de "Añadir al Carrito"**
 - Animación visual personalizada al pulsar el botón, como un cambio de color o escala.
 - Mejora la experiencia de usuario con un feedback visual claro.
+
+### **7. Responsividad**
+- El diseño es completamente responsivo, adaptándose a diferentes tamaños de pantalla.
+- Optimizado para dispositivos móviles y tabletas, garantizando una buena experiencia de usuario en todos los dispositivos.
 
 ---
 
@@ -48,6 +58,7 @@ Este proyecto es una aplicación web interactiva diseñada para mostrar un lista
 - `components/productList.js`: Lógica para renderizar y filtrar productos.
 - `components/modal.js`: Manejo de la ficha de producto en el modal.
 - `components/animation.js`: Implementación de animaciones para el botón "Añadir al carrito".
+- `components/cart.js`: Lógica para gestionar el carrito de compras.
 
 ---
 
@@ -66,7 +77,9 @@ Este proyecto es una aplicación web interactiva diseñada para mostrar un lista
    - Filtrar productos por categoría.
    - Buscar productos por nombre.
    - Ver detalles de un producto en el modal.
-   - Pulsar el botón "Añadir al carrito" para activar la animación.
+   - Añadir productos al carrito.
+   - Eliminar productos del carrito.
+   - Realizar la compra (si el carrito no está vacío).
 
 ---
 
@@ -75,4 +88,4 @@ Este proyecto es una aplicación web interactiva diseñada para mostrar un lista
 El proyecto está desplegado en **GitHub Pages** y se puede acceder desde el siguiente enlace:  
 [https://ctupac999.github.io/pTecdic/](https://ctupac999.github.io/pTecdic/)
 
----
+--- 
