@@ -20,7 +20,6 @@ export function initAnimations() {
                 });
             }
 
-            alert('Producto añadido al carrito');
         }
     });
 }

@@ -19,31 +19,6 @@ button:hover {
 
 button:focus {
     outline: none; 
-    box-shadow: 0 0 0 3px rgba(92, 107, 192, 0.5); 
-}
-
-.bubble {
-    position: absolute;
-    width: 10px;
-    height: 10px;
-    border-radius: 50%;
-    background-color: var(--secondary-accent-color); 
-    pointer-events: none;
-    animation: float 2s ease-out forwards;
-}
-
-@keyframes float {
-    0% {
-        transform: translate(0, 0) scale(1);
-        opacity: 1;
-    }
-    50% {
-        transform: translate(-10px, -30px) scale(1.2);
-        opacity: 0.8;
-    }
-    100% {
-        transform: translate(10px, -60px) scale(0.8);
-        opacity: 0;
-    }
+    box-shadow: var(--button-box-shadow); 
 }
 

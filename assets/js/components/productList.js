@@ -1,3 +1,4 @@
+
 export function renderProducts(products) {
     const productList = document.getElementById('productList');
     productList.innerHTML = ''; 
@@ -12,12 +13,16 @@ export function renderProducts(products) {
             <button class="details-button" data-id="${product.id}">Ver Detalles</button>
         `;
         productList.appendChild(productElement);
+
+        productElement.querySelector('.details-button').addEventListener('click', () => {
+            openModal(product);
+        });
     });
 }
 
 export function filterAndSearch(products) {
-    const selectedCategory = categoryFilter.value; 
-    const searchTerm = searchInput.value.toLowerCase();
+    const selectedCategory = document.getElementById('categoryFilter').value; 
+    const searchTerm = document.getElementById('searchInput').value.toLowerCase();
 
     const filteredProducts = products.filter(product => {
         const matchesCategory = selectedCategory === 'all' || product.category === selectedCategory; 
@@ -27,3 +32,4 @@ export function filterAndSearch(products) {
 
     renderProducts(filteredProducts);
 }
+    

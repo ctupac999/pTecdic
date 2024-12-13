@@ -1,3 +1,5 @@
+import { addToCart } from './cart.js';  
+
 export function openModal(product) {
     const productModal = document.getElementById('productModal');
     
@@ -20,15 +22,23 @@ export function openModal(product) {
         <p>${product.description}</p>
         <p><strong>Precio:</strong> ${product.price} USD</p>
         <div class="modal-footer">
-            <button class="add-to-cart">Añadir al Carrito</button>
+            <button class="add-to-cart" data-id="${product.id}">Añadir al Carrito</button>
         </div>
     `;
 
     productModal.classList.remove('hidden');
     backdrop.classList.remove('hidden');
 
-    document.getElementById('closeModal').addEventListener('click', closeModal);
+    const addToCartButton = document.querySelector('.add-to-cart');
+    
+    addToCartButton.addEventListener('click', () => {
+        addToCart(product);      
+        setTimeout(() => {
+            closeModal();  
+        }, 700); 
+    });
 
+    document.getElementById('closeModal').addEventListener('click', closeModal);
     backdrop.addEventListener('click', closeModal);
 }
 
@@ -39,14 +49,3 @@ export function closeModal() {
     if (productModal) productModal.classList.add('hidden');
     if (backdrop) backdrop.classList.add('hidden');
 }
-
-
-document.addEventListener('click', (event) => {
-    if (event.target.id === 'closeModal') {
-        closeModal();  
-    }
-
-    if (event.target.id === 'backdrop') {
-        closeModal();
-    }
-});

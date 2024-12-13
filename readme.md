@@ -69,3 +69,10 @@ Este proyecto es una aplicación web interactiva diseñada para mostrar un lista
    - Pulsar el botón "Añadir al carrito" para activar la animación.
 
 ---
+
+## **Proyecto Desplegado**
+
+El proyecto está desplegado en **GitHub Pages** y se puede acceder desde el siguiente enlace:  
+[https://ctupac999.github.io/pTecdic/](https://ctupac999.github.io/pTecdic/)
+
+---

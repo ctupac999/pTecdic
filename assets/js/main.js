@@ -1,20 +1,22 @@
 import { products } from './data/products.js';
 import { renderProducts, filterAndSearch } from './components/productList.js';
 import { openModal } from './components/modal.js';
-import { initAnimations } from './components/animation.js';
+import { initAnimations } from './components/buttonAnimation.js';
+import { checkout } from './components/cart.js';  
 
 const productList = document.getElementById('productList');
 const categoryFilter = document.getElementById('categoryFilter');
 const searchInput = document.getElementById('searchInput');
 
 document.addEventListener('DOMContentLoaded', () => {
-    console.log("Document loaded");
     renderProducts(products);
-
     categoryFilter.addEventListener('change', () => filterAndSearch(products));
     searchInput.addEventListener('input', () => filterAndSearch(products));
 
     initAnimations();
+    
+    const checkoutButton = document.getElementById('checkout-button');
+    checkoutButton.addEventListener('click', checkout);
 });
 
 productList.addEventListener('click', (event) => {
@@ -24,3 +26,7 @@ productList.addEventListener('click', (event) => {
         openModal(product);
     }
 });
+
+
+
+

@@ -3,6 +3,10 @@
 @import './components/product-list.css';
 @import './components/utils.css';
 @import './components/filters.css';
+@import './components/cart.css';
+@import './components/buttonAnimation.css';
+
+
 
 
 :root {
@@ -13,13 +17,27 @@
     --secondary-accent-color: #8694e4;
     --button-background-color: #4d67a1;
     --button-text-color: #ffffff;
-    --button-hover-color:#7b96d6;
+    --button-hover-color: #7b96d6;
+    --button-box-shadow: 0 0 0 3px rgba(92, 107, 192, 0.5);
     --input-background-color: #ffffff;
     --input-border-color: #d1d1d1;
     --input-text-color: #333333;
     --modal-background-color: rgba(0, 0, 0, 0.7);
     --modal-text-color: #ffffff;
     --link-color: #5c6bc0;
+    --bubble-color: #e08835;
+    --product-bg-color: var(--input-background-color);
+    --product-border-color: var(--input-border-color); 
+    --product-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    --modal-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    --modal-header-color: var(--primary-text-color);
+    --remove-btn-bg: var(--bubble-color); 
+    --remove-btn-hover-color: rgb(233, 153, 55);
+    --cart-item-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    --cart-item-background-color: var(--button-text-color);
+    --filter-box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    --filter-transition: border-color 0.3s ease, box-shadow 0.3s ease;
+    
 }
 
 body {
@@ -36,9 +54,11 @@ header {
     color: #fff;
     padding: 1rem;
     text-align: center;
+    height: 3%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
-
-
 
 
 

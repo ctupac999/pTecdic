@@ -10,9 +10,10 @@
 <body>
     <header>
         <h1>Listado de Productos</h1>
+        
     </header>
     <main>
-        <div class="filters">
+        <div class="filters flex">
             <select id="categoryFilter">
                 <option value="all">Todas las Categorías</option>
                 <option value="category1">Categoría 1</option>
@@ -22,6 +23,17 @@
         </div>
         <div id="productList" class="product-list"></div>
         <div id="productModal" class="modal hidden"></div>
+        
+        <div id="cart-container" class="cart-container flex">
+            <div id="cart" class="center">
+                <h2>Carrito de Compras</h2>
+                <div id="cart-items" class="flex"></div>
+                <div id="cart-check">
+                    <p id="cart-total">Total: 0 €</p>
+                <button id="checkout-button">Finalizar Compra</button>
+                </div>
+            </div>
+        </div>
     </main>
     <script type="module" src="assets/js/main.js"></script></body>
 </html>
